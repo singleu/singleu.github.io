@@ -1,5 +1,4 @@
 import './hero.css';
-import '../../bg.jpg';
 
 export default function Hero() {
     return /*html*/`
