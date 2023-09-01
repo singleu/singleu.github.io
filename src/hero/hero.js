@@ -20,7 +20,7 @@ export default function Hero() {
           <a href="#" class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
             Fale com um especialista
            </a>
-           <a href="#" class="text-sm font-semibold leading-6 text-gray-900"> Conheça mais <span aria-hidden="true">→</span></a>
+           <a href="#about" class="text-sm font-semibold leading-6 text-gray-900"> Conheça mais <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
