@@ -1,0 +1,15 @@
+
+#hero::before {
+    background-attachment: fixed;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    position: absolute;
+    background-position: top;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.08;     
+}
