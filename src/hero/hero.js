@@ -2,27 +2,27 @@ import './hero.css';
 
 export default function Hero() {
     return /*html*/`
-<section id="hero" class="bg-white">
-  <div class="relative isolate px-6 pt-14 lg:px-8">
-    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-black ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-          Desenvolvendo seu plano comercial?
-          <a href="#" class="font-semibold text-green-800"><span class="absolute inset-0" aria-hidden="true"></span>
-            Agende uma conversa <span aria-hidden="true">&rarr;</span>
-          </a>
+<section id="hero" class="mt-20">
+  <div class="max-w-5xl lg:px-4 m-auto">
+    <div class="relative isolate lg:p-6 lg:px-8">
+      <div class="lg:max-w-[464px] lg:bg-[#3E885B] bg-[#013114db] lg:rounded-lg lg:py-10 p-8 lg:my-20 py-32">
+        <div>
+          <h1 class="text-xs font-semibold tracking-tight text-white  sm:text-2xl mb-6">SISTEMA MANANCIAL</h1>
+          <h2 class="text-4xl font-bold tracking-tight text-white  sm:text-5xl">Comercialização Confiante</h2>
+          <p class="mt-6 text-lg leading-8 font-light text-white">Traduzindo os indicadores de mercado para a sua tomada de decisão</p>
+          <div class="mt-10 flex  gap-x-6">
+            <a href="#about" class="text-sm font-semibold leading-6 text-black rounded-lg px-4 py-2 bg-[#FCBA04]"> Conheça mais </a>
+          </div>
         </div>
       </div>
-      <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Sistema Manancial</h1>
-        <p class="mt-6 text-lg leading-8 text-black">Oferecendo informações essenciais e soluções personalizadas para o cultivo de maneira lucrativa e sustentável.</p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
-            Fale com um especialista
-           </a>
-           <a href="#about" class="text-sm font-semibold leading-6 text-gray-900"> Conheça mais <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
+    </div>
+  </div>
+  <div id="banner-plan" class="bg-[#FCBA04] p-4 text-center feature">
+    <div class="relative  px-3 py-2 text-1xl text-black ring-1 ring-black rounded-lg max-w-2xl m-auto ">
+      Desenvolvendo seu plano comercial?
+      <a href="#" class="font-semibold  text-black"><span class="absolute inset-0" aria-hidden="true"></span>
+        Agende uma conversa <span aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </section>

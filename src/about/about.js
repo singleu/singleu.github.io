@@ -1,13 +1,48 @@
+import "./about.css";
+
 export default function About() {
     return /*html*/`
     <section id="about">
-        <div class="relative px-6 py-40 lg:px-8">
-            <div class="mx-auto max-w-4xl">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-10">Conheça mais</h2>
-                <p class="leading-8 mb-6 indent-5">Aaron Edwards, renomado Consultor de Mercado, desvendará para você o método exclusivo que exige apenas algumas horas de dedicação em momentos estratégicos do ano. O resultado? Uma transformação na sua receita, fazendo o mercado de soja e milho trabalhar em prol do sucesso da sua propriedade.</p>
-                <p class="leading-8 indent-5">
-                Com anos de experiência e um profundo entendimento das complexidades do setor agrícola, o Sistema Manancial se compromete a ser sua parceira confiável no caminho para colheitas abundantes e saudáveis. Nossos serviços abrangem desde o planejamento estratégico de cultivos até a implementação de práticas agrícolas ecologicamente responsáveis.
-                </p>
+        <div class="max-w-5xl px-4 m-auto mt-16 md:mt-36 mb-10 md:mb-20">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-9/12 m-auto   mb-14 px-4 text-center icon-vector">
+                    <img id="author-img" class="rounded-md" src="/author.jpg">
+                </div>
+                <div class="w-auto px-6">
+                    <h1 class="text-sm font-bold uppercase">método exclusivo</h1>
+                    <h1  class="text-3xl mt-2 font-bold">Aaron Edwards</h1>
+                    <p class="leading-8 mb-6 mt-4">
+                        Descubra o método exclusivo desenvolvido por Aaron Edwards, renomado consultor de mercado, e aprenda a fazer o mercado de soja e milho trabalhar a favor da sua fazenda. Com enfoque em ajudar produtores a vender bem sua produção, e assim gerir a receita de sua fazenda
+                    </p>
+                    <div class="md:hidden">
+                        <a href="#about" class="text-sm font-semibold leading-6 text-white rounded-lg px-4 py-2 bg-[#3E885B]">
+                            Conheça os Planos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row max-w-full overflow-scroll md:overflow-hidden flex-nowrap mt-8 md:mt-4 space-x-3">
+                <div class="flex-none w-1/2 bg-gray-100 rounded p-4 md:flex md:w-1/3 md:bg-white">
+                    <span class="icon icon-check"></span>
+                    <div class="inline-block">
+                        <h4 class="uppercase font-bold">Estratégia comprovada</h4>
+                        <p class="text-sm font-extralight">Dados concretos com histórico sólido</p>
+                    </div>
+                </div>
+                <div class="flex-none w-1/2 bg-gray-100 rounded p-4 md:flex md:w-1/3 md:bg-white">
+                    <span class="icon icon-mobile"></span>
+                    <div class="inline-block">
+                        <h4 class="uppercase font-bold">Acessível e Pessoal</h4>
+                        <p class="text-sm font-extralight">Consultoria e alertas direto no seu aparelho</p>
+                    </div>
+                </div>
+                <div class="flex-none w-1/2 bg-gray-100 rounded p-4 md:flex  md:w-1/3 md:bg-white">
+                    <span class="icon icon-action"></span>
+                    <div class="inline-block">
+                        <h4 class="uppercase font-bold">Plano e Ação</h4>
+                        <p class="text-sm font-extralight">Saiba quando e quanto precisa vender</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

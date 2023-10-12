@@ -1,0 +1,32 @@
+.icon-vector {
+    position: relative;
+}
+.icon-vector::after {
+    content: " ";
+    width: 2.5em;
+    height: 2.5em;
+    background-image: url('/vector.svg');
+    position: absolute;
+    top: -1.5em;
+    right: -.5em;
+}
+
+.icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+}
+
+.icon-check {
+    background-image: url('/check.svg');
+}
+
+.icon-mobile {
+    background-image: url('/mobile.svg');
+    
+}
+
+.icon-action {
+    background-image: url('/action.svg');
+    
+}
