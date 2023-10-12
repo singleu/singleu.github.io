@@ -3,7 +3,7 @@ import logo from '../../logo.png';
 
 export default function Header() {
     return /*html*/`
-    <header class="absolute inset-x-0 top-0 z-50 bg-white">
+    <header id="header" class="sticky inset-x-0 top-0 z-50">
     <div class="max-w-5xl px-4 m-auto">
       <nav class="flex items-center justify-between px-6 py-4" aria-label="Global">
         <div class="flex lg:flex-1">

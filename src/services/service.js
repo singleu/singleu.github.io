@@ -3,7 +3,7 @@ export function Service(title, offer, description, requirements) {
         <div class="h-full">                                
             <div class="relative flex flex-col h-full p-6 rounded-lg bg-white border border-slate-100 shadow shadow-slate-950/5">
                 <div class="mb-5">
-                    <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">
+                    <div class="text-slate-900 uppercase text-sm mb-6 dark:text-slate-200 font-semibold">
                         ${title}
                     </div>
                     <div class="inline-flex items-baseline mb-2">
