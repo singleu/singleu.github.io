@@ -17,6 +17,11 @@
     height: 3em;
 }
 
+#sobre {
+    width: 100% !important;
+    margin-top: -8em;
+}
+
 .icon-check {
     background-image: url('/check.svg');
 }

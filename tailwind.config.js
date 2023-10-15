@@ -7,7 +7,12 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#3E885B',
+        secondary: '#FCBA04'
+      }
+    }
   },
   plugins: [],
 }

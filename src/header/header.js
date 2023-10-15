@@ -21,9 +21,9 @@ export default function Header() {
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#about" class="menu-action font-semibold leading-6 text-gray-900 py-2">Conheça mais</a>
-          <a href="#services" class="menu-action font-semibold leading-6 text-gray-900 py-2">Planos</a>
-          <a href="#contact" class="menu-action font-semibold leading-6 inline-flex justify-center whitespace-no wrap rounded-lg bg-[#3E885B] px-3.5 py-2 font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150">Comece grátis</a>
+          <a id="menu-sobre" href="#sobre"  class="menu-action font-semibold leading-6 text-gray-900 py-2 border-b-4 border-transparent">Conheça mais</a>
+          <a id="menu-planos" href="#planos" class="menu-action font-semibold leading-6 text-gray-900 py-2 border-b-4 border-transparent">Planos</a>
+          <a href="#" class="menu-action font-semibold leading-6 inline-flex justify-center whitespace-no wrap rounded-lg bg-primary px-3.5 py-2 font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 text-white">Comece grátis</a>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
@@ -46,9 +46,9 @@ export default function Header() {
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="#about" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Conheça mais</a>
-                <a href="#services" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Planos</a>
-                <a href="#contact" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">Comece grátis</a>
+                <a href="#sobre" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Conheça mais</a>
+                <a href="#planos" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Planos</a>
+                <a href="#" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">Comece grátis</a>
               </div>
             </div>
           </div>
@@ -79,4 +79,52 @@ export function addMenuEvents() {
             menu.style.display = 'none';
         }, true);
     })
+    
+    signalMenuPosition();
+}
+
+
+function signalMenuPosition() {
+  const planPosY = document.getElementById('planos').offsetTop;
+  const aboutPosY = document.getElementById('sobre').offsetTop;
+  const aboutMenu = document.getElementById('menu-sobre');
+  const plansMenu = document.getElementById('menu-planos');
+
+  let sessao = null;
+
+  document.addEventListener("scroll", (event) => {
+    let lastKnownScrollYPosition = window.scrollY;
+
+    if(lastKnownScrollYPosition >= aboutPosY && lastKnownScrollYPosition < planPosY) {
+      if(sessao != 'sobre') {
+        aboutMenu.classList.add('border-primary')
+        aboutMenu.classList.remove('border-transparent')
+        plansMenu.classList.add('border-transparent')
+        console.log('sessão ', sessao);
+      }
+
+      sessao = 'sobre';
+      return;
+    }
+
+    if(lastKnownScrollYPosition >= planPosY) {
+      if(sessao != 'plano') {
+        plansMenu.classList.add('border-primary')
+        plansMenu.classList.remove('border-transparent')
+        aboutMenu.classList.add('border-transparent')
+        console.log('sessão ', sessao);
+      }
+      sessao = 'plano';
+      return;
+    }
+    
+    if(sessao != null) {
+      plansMenu.classList.remove('border-primary')
+      aboutMenu.classList.remove('border-primary')
+      plansMenu.classList.add('border-transparent')
+      aboutMenu.classList.add('border-transparent')
+      console.log('sessão ', sessao);
+    }
+    sessao = null;
+  });
 }
