@@ -11,7 +11,7 @@ export default function Hero() {
           <h2 class="text-4xl font-semibold tracking-tight text-white  sm:text-5xl">Comercialização Confiante</h2>
           <p class="mt-6 text-lg leading-8 font-light text-white">Traduzindo os indicadores de mercado para a sua tomada de decisão</p>
           <div class="mt-10 flex  gap-x-6">
-            <a href="#about" class="text-sm font-semibold leading-6 text-black rounded-lg px-4 py-2 bg-secondary"> Conheça mais </a>
+            <a href="#sobre" class="text-sm font-semibold leading-6 text-black rounded-lg px-4 py-2 bg-secondary"> Conheça mais </a>
           </div>
         </div>
       </div>
