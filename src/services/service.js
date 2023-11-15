@@ -10,7 +10,7 @@ export function Service(title, offer, description, requirements) {
                         <span class="text-slate-900 dark:text-slate-200 font-bold text-3xl"></span>
                         <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl">${offer}</span>
                     </div>
-                    <div class="font-light text-black my-5">
+                    <div class="font-light text-black my-5 h-24">
                         ${description}
                     </div>
                     <a class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-primary px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
