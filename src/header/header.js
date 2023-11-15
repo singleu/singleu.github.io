@@ -23,7 +23,7 @@ export default function Header() {
         <div class="hidden lg:flex lg:gap-x-12">
           <a id="menu-sobre" href="#sobre"  class="menu-action font-semibold leading-6 text-gray-900 py-2 border-b-4 border-transparent">Conheça mais</a>
           <a id="menu-planos" href="#planos" class="menu-action font-semibold leading-6 text-gray-900 py-2 border-b-4 border-transparent">Planos</a>
-          <a href="#" class="menu-action font-semibold leading-6 inline-flex justify-center whitespace-no wrap rounded-lg bg-primary px-3.5 py-2 font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 text-white">Comece grátis</a>
+          <a href="/relatorio-semanal.html" class="menu-action font-semibold leading-6 inline-flex justify-center whitespace-no wrap rounded-lg bg-primary px-3.5 py-2 font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 text-white">Comece grátis</a>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
@@ -48,7 +48,7 @@ export default function Header() {
               <div class="space-y-2 py-6">
                 <a href="#sobre" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Conheça mais</a>
                 <a href="#planos" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Planos</a>
-                <a href="#" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">Comece grátis</a>
+                <a href="/relatorio-semanal.html" class="menu-action -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">Comece grátis</a>
               </div>
             </div>
           </div>

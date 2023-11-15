@@ -1,4 +1,4 @@
-export function Service(title, offer, description, requirements) {
+export function Service(title, link, offer, description, requirements) {
     return /*html*/`
         <div class="h-full">                                
             <div class="relative flex flex-col h-full p-6 rounded-lg bg-white border border-slate-100 shadow shadow-slate-950/5">
@@ -13,7 +13,7 @@ export function Service(title, offer, description, requirements) {
                     <div class="font-light text-black my-5 h-24">
                         ${description}
                     </div>
-                    <a class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-primary px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
+                    <a target="_blank" href="${link}" class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-primary px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-green-950/10 hover:bg-green-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
                         Agende uma conversa agora
                     </a>
                 </div>
