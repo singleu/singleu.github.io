@@ -20,7 +20,7 @@ export default function Hero() {
   <div id="banner-plan" class="bg-secondary p-4 text-center feature">
     <div class="relative  px-3 py-2 text-1xl text-black font-extralight ring-1 ring-black rounded-lg max-w-2xl m-auto ">
       Desenvolvendo seu plano comercial?
-      <a href="#" class="font-semibold  text-black">
+      <a href="/plano-comercial.html" class="font-semibold  text-black">
         <span class="absolute inset-0" aria-hidden="true"></span>
         <span class="font-medium">
           Agende uma conversa 
