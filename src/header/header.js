@@ -93,7 +93,7 @@ function signalMenuPosition() {
   let sessao = null;
 
   document.addEventListener("scroll", (event) => {
-    let lastKnownScrollYPosition = window.scrollY;
+    let lastKnownScrollYPosition = window.scrollY + 40;
 
     if(lastKnownScrollYPosition >= aboutPosY && lastKnownScrollYPosition < planPosY) {
       if(sessao != 'sobre') {
