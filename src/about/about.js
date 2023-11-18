@@ -16,7 +16,7 @@ export default function About() {
                         Descubra o método exclusivo desenvolvido por Aaron Edwards, renomado consultor de mercado, e aprenda a fazer o mercado de soja e milho trabalhar a favor da sua fazenda. Com enfoque em ajudar produtores a vender bem sua produção, e assim gerir a receita de sua fazenda
                     </p>
                     <div class="md:hidden">
-                        <a href="#about" class="text-sm font-semibold leading-6 text-white rounded-lg px-4 py-2 bg-primary">
+                        <a href="#planos" class="text-sm font-semibold leading-6 text-white rounded-lg px-4 py-2 bg-primary">
                             Conheça os Planos
                         </a>
                     </div>

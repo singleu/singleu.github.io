@@ -1,0 +1,24 @@
+{
+    "links": [
+        {
+            "id": "relatorio-semanal",
+            "name": "Relatorio Semanal",
+            "url": "https://wa.me/5511910381883?text=Tenho+interesse+no+plano+%22Relat%C3%B3rio+Semanal%22"
+        },
+        {
+            "id": "plano-comercial",
+            "name": "Plano Comercial",
+            "url": "https://wa.me/5511910381883?text=Tenho+interesse+em+desenvolver+um+plano+comercial"
+        },
+        {
+            "id": "consultoria-automatiza",
+            "name": "Consultoria Automatizada",
+            "url": "https://wa.me/5511910381883?text=Tenho+interesse+no+plano+%22Consultoria+Automatizada%22"
+        },
+        {
+            "id": "consultoria-personalizada",
+            "name": "Consultoria Personalizada",
+            "url": "https://wa.me/5511910381883?text=Tenho+interesse+no+plano+%22Consultoria+Personalizada%22 "
+        }
+    ]
+}

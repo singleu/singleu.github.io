@@ -29,6 +29,10 @@
 }
 
 
+a[data-redirect] {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
 }
