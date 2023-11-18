@@ -3,10 +3,10 @@ name: Upload Website
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
-build:
+  build:
     name: Build
     runs-on: ubuntu-latest
 
