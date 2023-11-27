@@ -16,7 +16,7 @@ export class Link {
 
     run(key) {
         const link = links.find((item) => {
-            return item.id = key;
+            return item.id == key;
         })
 
         if(link) {
