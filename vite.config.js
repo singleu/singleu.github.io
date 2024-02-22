@@ -14,6 +14,14 @@ export default {
         name: 'prerender-html-build',
         apply: 'build',
         enforce: 'pos',
+        buildEnd(error) {
+          if (error) {
+            console.log("Error building");
+            console.log(error);
+            process.exit(1);
+          }
+          console.log("Bundle closed");
+        },
         async closeBundle () {
           if (mainJs) {
             const indexHtml = path.resolve(path.dirname(__filename), 'dist/index.html');
@@ -24,6 +32,8 @@ export default {
             });
             fs.writeFileSync(indexHtml,  content);
           }
+
+          process.exit(0);
         },
         async transformIndexHtml(App, settings) {
             const files = Object.keys(settings.bundle);
