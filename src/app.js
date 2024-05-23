@@ -10,8 +10,6 @@ export default function App() {
     <div>
         ${Header()}
         ${Hero()}
-        ${About()}
-        ${Services()}
         ${Footer()}
     </div>
     `;

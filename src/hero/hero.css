@@ -1,9 +1,9 @@
 
 #hero {
-    background: url('/hero.png');
+    /*background: url('/hero.png');*/
     color:#fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 615px;
+    min-height: 400px;
 }
