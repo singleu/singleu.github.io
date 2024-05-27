@@ -4,7 +4,7 @@
             <div class="max-w-5xl px-2 lg:px-4 m-auto flex flex-col-reverse md:flex-row">
             <div class="flex-1">
                 <p class="mt-4 text-white font-bold text-center md:text-left">
-                   Singleu Consultoria em Tecnologia da Informação LTDA
+                    LUCAS CARVALHO DA SILVA CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA
                 </p>
                 <p class="lg:mt-4 mt-2 text-white text-sm md:text-md font-light text-center md:text-left">
                     Av. Brig. Faria Lima, 2050, Andar 11 Conjunto 1102 <br/>
